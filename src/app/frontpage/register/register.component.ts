@@ -21,7 +21,7 @@ export class RegisterComponent implements OnInit {
   }
 
   save() {
-    this.userService.postUser(this.user)
+    this.userService.createtUser(this.user)
       .subscribe(data => console.log(data), error => console.log(error));
     this.user = new User();
   }

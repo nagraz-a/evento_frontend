@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Event } from '../app/event'
+import { Event } from '../app/event';
+
+
 
 
 @Injectable({
@@ -19,12 +21,12 @@ export class UserService {
   
   serviceUrl='http://localhost:8080/eventRegistration';
   postEvent(event: Object): Observable<Object> {
-    return this._http.post(`${this.serviceUrl}` + `/createEventRegistration`, event);
+    return this._http.post<Object>(`${this.serviceUrl}` + `/createEventRegistration`, event);
   }
 
-  userUrl='http://localhost:8080/user/';
-  postUser(event: Object): Observable<Object> {
-    return this._http.post(`${this.userUrl}` + `/createUser`, event);
+  userUrl='http://localhost:8080/user'
+  createtUser(user: Object): Observable<Object> {
+    return this._http.post<Object>(`${this.userUrl}` + `/saveuser`, user);
   }
 
 
