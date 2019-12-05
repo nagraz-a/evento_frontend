@@ -9,7 +9,8 @@ import { CreateventComponent} from '../createvent/createvent.component'
 import { EventoComponent } from '../frontpage/evento/evento.component';
 import { RegisterComponent } from '../frontpage/register/register.component';
 import { LoginComponent } from '../frontpage/login/login.component';
-
+import { ListofusersComponent } from '../listofusers/listofusers.component';
+import { ListofeventsComponent } from '../listofevents/listofevents.component';
 
 const routes: Routes = [
   {
@@ -24,7 +25,9 @@ const routes: Routes = [
   { path: 'createvent',component: CreateventComponent },
   { path: 'evento',  component: EventoComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'login', component: LoginComponent }
+  { path: 'login', component: LoginComponent },
+  { path: 'listofusers', component: ListofusersComponent },
+  { path: 'listofevents', component: ListofeventsComponent }
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

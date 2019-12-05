@@ -1,0 +1,21 @@
+
+<table border="1" style="width:80%" align="right">
+    <tr>
+            <th>s.no</th>
+            <th>event title</th>
+            <th>event type</th>
+            <th>event category</th>
+            <th>start date</th>
+    </tr>
+<tbody>
+        <tr *ngFor=" let event of event; let i = index;"  >
+
+         <td>{{ i+1  }}</td>    
+         <td> {{event.title}}</td>
+         <td> {{event.event_type}}</td>
+         <td> {{event.event_category}}</td>
+         <td> {{event.day}}</td>
+
+</tbody>
+ 
+</table>
