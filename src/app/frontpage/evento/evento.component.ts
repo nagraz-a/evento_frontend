@@ -10,7 +10,7 @@ import { Router, NavigationEnd } from '@angular/router'
 })
 export class EventoComponent implements OnInit {
   sectionScroll: any;
-
+ 
   constructor( private _router:Router ) { }
 
   login(){

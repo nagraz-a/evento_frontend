@@ -1,7 +1,5 @@
         <app-sidebar></app-sidebar>
 
-
-
     <div align="center">   
           <div style="text-align:center;color:blue">
                     <h3><b>Event Registration</b></h3>
@@ -82,14 +80,18 @@
                                                 <label for = "comments"> Comments:  </label>
                                                 <input type = "text" class = "form-control"  [(ngModel)]="event.comments" name="comments">
                                 </div>
-                                <button type="submit (click)=newEvent()" class="btn btn-success" >Submit</button>
+                                <button type="submit (click)= newEvent()" class="btn btn-success" >Submit</button>
                                 
                         </form>
             </div>
     </div>
         <div [hidden]="!submitted" align="center">
                 <h4>You submitted successfully!</h4>
+<<<<<<< HEAD
+          <button class="btn btn-success" (click)="newEvent()" >Add</button> 
+=======
                 
+>>>>>>> f3cf73b5ba252bb336383d8ff9db0bd94fcd4590
         </div>
         
        

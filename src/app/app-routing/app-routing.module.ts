@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, ChildActivationEnd } from '@angular/router';
 import { AppComponent } from '../app.component';
 import { SidebarComponent } from '../sidebar/sidebar.component';
 import { NavbarComponent} from "../navbar/navbar.component";
@@ -24,10 +24,15 @@ const routes: Routes = [
   { path: 'eventregistration', component: EventregistrationComponent },
   { path: 'createvent',component: CreateventComponent },
   { path: 'evento',  component: EventoComponent },
+<<<<<<< HEAD
+  { path: 'register', component:RegisterComponent },
+  { path: 'login', component: LoginComponent }
+=======
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent },
   { path: 'listofusers', component: ListofusersComponent },
   { path: 'listofevents', component: ListofeventsComponent }
+>>>>>>> f3cf73b5ba252bb336383d8ff9db0bd94fcd4590
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
