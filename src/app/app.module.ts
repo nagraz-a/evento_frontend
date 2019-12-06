@@ -12,6 +12,8 @@ import { FormsModule } from '@angular/forms';
 import { EventoComponent } from './frontpage/evento/evento.component';
 import { RegisterComponent } from './frontpage/register/register.component';
 import { LoginComponent } from './frontpage/login/login.component';
+import { ListofusersComponent } from './listofusers/listofusers.component';
+import { ListofeventsComponent } from './listofevents/listofevents.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { LoginComponent } from './frontpage/login/login.component';
     CreateventComponent,
     EventoComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    ListofusersComponent,
+    ListofeventsComponent
    
    
   ],

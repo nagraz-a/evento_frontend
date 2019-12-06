@@ -1,0 +1,32 @@
+<<<<<<< HEAD
+table, th , td  {
+    border: 2px solid grey;
+    border-collapse: collapse;
+    padding:5px;
+  }
+
+  table, tr, th {
+    background-color: #8c89a1;
+  }
+  table tr:nth-child(odd) {
+    background-color: #f1f1f1;
+  }
+  table tr:nth-child(even) {
+    background-color: #ffffff;
+=======
+table, th , td  {
+    border: 2px solid grey;
+    border-collapse: collapse;
+    padding:5px;
+  }
+
+  table, tr, th {
+    background-color: #8c89a1;
+  }
+  table tr:nth-child(odd) {
+    background-color: #f1f1f1;
+  }
+  table tr:nth-child(even) {
+    background-color: #ffffff;
+>>>>>>> 39a8848cb42a28962effa93d27fa2b74a6cbc529
+  }
